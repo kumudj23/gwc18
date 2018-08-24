@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multi Player</title>
+    <script src="json_intro_starter.js"> </script>
+  </head>
+
+  <body>
+    <div id="player1"> </div>
+    <div id="player2"> </div>
+
+    <footer>
+      <p>This website uses: <a href="https://developers.google.com/youtube/iframe_api_reference"> YouTube iFrame API</a></p>
+    </footer>
+
+  </body>
+
+</html>

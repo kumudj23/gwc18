@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="homePage.html">Home</a>
+    <a href="prompts.html">Prompts</a>
+    <a href="visionary_map.html">Events Near Me</a>
+    <a href="poem.html">Poems</a>
+    <a href="gallery.html">Artwork</a>
+    <a href="visionary_about.html">About Us</a>
+  </div>
+<center>
+<p id="prompts"></p>
+<script src="prompts.js"> </script>
+
+<div class="center">
+      <button onclick="printPrompts(calm_prompts)"><img src="calm.gif" class="center" alt="" width = "120" height="120"> </button>
+      <button onclick="printPrompts(loving_prompts)"><img src="loving.gif" alt="" class="center" width = "120" height="120"></button>
+      <button onclick="printPrompts(silly_prompts)"><img src="silly.gif" alt="" class="center" width = "120" height="120"></button>
+      <button onclick="printPrompts(optimistic_prompts)"><img src="optimistic.gif" alt="" class="center" width = "120" height="120"></button>
+    </div>
+    <div class="center">
+      <button onclick="printPrompts(depressed_prompts)"><img src="depressed.gif" alt="" class="center" width = "120" height="120"></button>
+      <button onclick="printPrompts(hateful_prompts)"><img src="hateful1.gif" alt="" class="center" width = "120" height="120"></button>
+      <button onclick="printPrompts(mysterious_prompts)"><img src="mystery.gif" alt="" class="center" width = "120" height="120"></button>
+      <button onclick="printPrompts(angry_prompts)"><img src="angry.gif" alt="" class="center" width = "120" height="120"></button>
+    </div>
+  <p id="demo"></p>
+</center>
+<!-- <div class="slideshow-container"> -->
+<!--function makeSlideDeck(listname)
+loop for length of item list
+  <div class="mySlides">
+    <q>listname[i]</q>
+  </div>
+-->
+
+<!-- <div class="mySlides">
+  <q>Smoke, Fog, and Haze</q>
+</div>
+<div class="mySlides">
+  <q>Lies</q>
+</div>
+<div class="mySlides">
+  <q>Cheating</q>
+</div>
+<div class="mySlides">
+  <q>Broken Hearts</q>
+</div>
+<div class="mySlides">
+  <q>Terrible Days</q>
+</div>
+<div class="mySlides">
+  <q>Worst Habbits</q>
+</div>
+<div class="mySlides">
+  <q>Nightmares</q>
+</div>
+<div class="mySlides">
+  <q>Lost Relationships</q>
+</div>
+<div class="mySlides">
+  <q>Memories</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Dread</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Tears</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Fake People</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Broken Promises</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Stress</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Terror</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Mistakes</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Regret</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Loss</q>
+</div>
+</div>
+<div class="mySlides">
+  <q>Alone</q>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div> -->
+
+<!-- <div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
+  <span class="dot" onclick="currentSlide(15)"></span>
+  <span class="dot" onclick="currentSlide(16)"></span>
+  <span class="dot" onclick="currentSlide(17)"></span>
+  <span class="dot" onclick="currentSlide(18)"></span>
+  <span class="dot" onclick="currentSlide(19)"></span>
+  <span class="dot" onclick="currentSlide(20)"></span>
+
+</div> -->
+<!--
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script> -->
+
+</body>
+</html>

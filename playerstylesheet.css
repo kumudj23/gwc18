@@ -1,0 +1,24 @@
+body{
+  background-image: url("https://media.gettyimages.com/photos/pink-linen-surface-close-up-of-pastel-textile-background-picture-id504477906?b=1&k=6&m=504477906&s=612x612&w=0&h=bupC-KqSHZRp-VP7BMY0NX5zhY8k5ktkVX50gFOTzk4=");
+}
+
+h1{
+  color: #9932CC;
+  font-size: 42px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+button{
+    background-color: #ff0000; /* red */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    opacity: 0.5;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}

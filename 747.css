@@ -1,0 +1,35 @@
+div{
+   padding: 8em;
+   opacity: 0.5;
+}
+
+h1 {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  font-size: 72px;
+  color: black;
+  style: normal;
+  font-variant: normal;
+  letter-spacing: 24px;
+  font-weight: 700;
+  line-height: 50px;
+  }
+
+
+  button{
+      background-color: #ff0000; /* red */
+      border: none;
+      color: white;
+      padding: 10px 24px;
+      opacity: 0.7;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 6px;
+      transition: 0.3s;
+  }
+
+h2{
+  text-decoration: none;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
